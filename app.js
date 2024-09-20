@@ -1,7 +1,6 @@
 (() => {
-    // let t = null;
     if (!Boolean(Accelerometer)) {
-        document.querySelector('#main').innerHTML = `<h1>Your device does not have an accelerometer</h1>`
+        document.querySelector('#main').innerHTML = `<h1>Your device/browser does not have/support an accelerometer</h1>`
     }
     else {
         const dc = document.querySelectorAll('span');
