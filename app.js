@@ -17,7 +17,7 @@
         }
         window.addEventListener("devicemotion", accelerometerUpdate, true);
 
-        const acl = new Accelerometer({ frequency: 60 });
+        const acl = new Accelerometer({ frequency: 10 });
         acl.addEventListener("reading", () => {
             dc[3].innerText = acl.x;
             dc[4].innerText = acl.y;
