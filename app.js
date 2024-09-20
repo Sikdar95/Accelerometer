@@ -24,5 +24,15 @@
             dc[2].innerText = (+acl.z).toFixed(1);
         });
         acl.start();
+
+        
+        const magSensor = new Magnetometer({ frequency: 2 });
+
+        magSensor.addEventListener("reading", () => {
+            dc[3].innerText = (+magSensor.x).toFixed(2);
+            dc[4].innerText = (+magSensor.y).toFixed(2);
+            dc[5].innerText = (+magSensor.z).toFixed(2);
+        });
+        magSensor.start();
     }
 })();
