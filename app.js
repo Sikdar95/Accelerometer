@@ -16,5 +16,13 @@
             }, 2500);
         }
         window.addEventListener("devicemotion", accelerometerUpdate, true);
+
+        const acl = new Accelerometer({ frequency: 60 });
+        acl.addEventListener("reading", () => {
+            dc[3].innerText = acl.x;
+            dc[4].innerText = acl.y;
+            dc[5].innerText = acl.z;
+        });
+        acl.start();
     }
 })();
