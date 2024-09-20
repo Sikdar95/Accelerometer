@@ -7,88 +7,16 @@ body {
     font-size: 13px;
 }
 
-#data{
+#data {
     text-align: left;
     margin-left: 18px;
 }
 
-button {
-    font-size: 15px;
-    width: 95px;
-    height: 30px;
-    border-radius: 4px;
-    border: 2px white solid;
-    color: white;
-    background-color: blue;
-    text-align: center;
-    -webkit-user-select: none;
-    user-select: none;
-    cursor: pointer;
-}
-
-button:active:not([disabled]) {
-    background-color: cyan !important;
-}
-
-button:hover:not([disabled]) {
-    background-color: darkcyan;
-}
-
-button:disabled {
-    opacity: 0.5;
-    background-color: blue;
-    cursor: not-allowed;
+#axes_img {
+    width: 280px;
+    margin-top: 40px;
 }
 
 .invisible {
     display: none;
-}
-
-input[type="range"] {
-    -webkit-appearance: none;
-    appearance: none;
-    cursor: pointer;
-    outline: none;
-    border-radius: 15px;
-    height: 5px;
-    background: #40444b;
-}
-
-/* Thumb: webkit */
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    height: 15px;
-    width: 15px;
-    background: skyblue;
-    border-radius: 50%;
-    border: none;
-    transition: .2s ease-in-out;
-}
-
-/* Thumb: Firefox */
-input[type="range"]::-moz-range-thumb {
-    height: 15px;
-    width: 15px;
-    background-color: skyblue;
-    border-radius: 50%;
-    border: none;
-    transition: .2s ease-in-out;
-}
-
-input[type=number]::-webkit-inner-spin-button {
-    opacity: 1
-}
-
-input[type=checkbox] {
-    height: 15px;
-    width: 15px;
-}
-
-input[type=radio] {
-    cursor: pointer;
-}
-
-input[type=radio]:checked+.mode {
-    color: skyblue;
 }

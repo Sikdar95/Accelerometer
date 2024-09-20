@@ -3,10 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';
+    connect-src 'none';
+    script-src 'self';
+    img-src 'self';
+    style-src 'self';
+    style-src-elem 'self';
+    font-src 'self';" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <title>Accelerometer</title>
+    <title>Sikdar's Accelerometer</title>
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
 </head>
 
 <body>
@@ -17,7 +24,7 @@
             <h3 id="acc_y">Y axis : <span></span></h3>
             <h3 id="acc_z">Z axis : <span></span></h3>
         </div>
-        <img src="./axes.jpg" style="width: 280px; margin-top: 40px;">
+        <img id="axes_img" src="./axes.jpg">
     </div>
     <script src="app.js"></script>
 </body>
